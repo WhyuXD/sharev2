@@ -3,12 +3,12 @@
 /* BEGIN: Cython Metadata
 {
     "distutils": {
-        "name": "Run",
+        "name": "run",
         "sources": [
-            "/storage/emulated/0/Download/enc/Run.py"
+            "/storage/emulated/0/Download/enc/run.py"
         ]
     },
-    "module_name": "Run"
+    "module_name": "run"
 }
 END: Cython Metadata */
 
