@@ -750,8 +750,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__Run
-#define __PYX_HAVE_API__Run
+#define __PYX_HAVE__run
+#define __PYX_HAVE_API__run
 /* Early includes */
 #ifdef _OPENMP
 #include <omp.h>
@@ -962,7 +962,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "Run.py",
+  "run.py",
 };
 
 /*--- Type declarations ---*/
@@ -1204,12 +1204,12 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'Run' */
-#define __Pyx_MODULE_NAME "Run"
-extern int __pyx_module_is_main_Run;
-int __pyx_module_is_main_Run = 0;
+/* Module declarations from 'run' */
+#define __Pyx_MODULE_NAME "run"
+extern int __pyx_module_is_main_run;
+int __pyx_module_is_main_run = 0;
 
-/* Implementation of 'Run' */
+/* Implementation of 'run' */
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_test[] = "__test__";
@@ -1238,17 +1238,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_Run(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_run(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_Run},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_run},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "Run",
+    "run",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -1296,7 +1296,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "Run.py":4
+  /* "run.py":4
  * 
  * import base64
  * exec(base64.b64decode('IyBBdXRob3IgQWdhayBMYWdpIEFnYWsgU3RyZXMgSmFkaSBUb3hpYwppbXBvcnQgbWFyc2hhbAppbXBvcnQgb3MscmUsc3lzLGJzNCx0aW1lLGpzb24scmFuZG9tLGRhdGV0aW1lLHJlcXVlc3RzLCBjYWxlbmRhciwgcmFuZG9tCgoKaGVhZGVyID0geyJhdXRob3JpdHkiOiJncmFwaC5mYWNlYm9vay5jb20iLCJjYWNoZS1jb250cm9sIjoibWF4LWFnZT0wIiwic2VjLWNoLXVhLW1vYmlsZSI6Ij8wIiwidXNlci1hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk4LjAuNDc1OC42NiBTYWZhcmkvNTM3LjM2In0Kc2VzPXJlcXVlc3RzLlNlc3Npb24oKQoKI3dhcm5hIGNvZWcKSyA9ICJceDFiWzA7MzNtIgpOID0gIlx4MWJbMG0iIApCID0gIlx4MWJbMDszNG0iCk0gPSAiXHgxYlswOzMxbSIKSCA9ICJceDFiWzA7MzJtIgoKZGVmIGxvZ28oKToKCWxvbz1mIiIiCl9fX19fX19fX19fX19fX19fX19fX18KXF8gICBfX19fXy9cX18gICAgX19fLwogfCAgICBfXykgICAgfCAgICB8ICAgCiB8ICAgICBcICAgICB8ICAgIHwgIHtCfUZBQ0VCT09LIFRPT0xTIHtOfQogXF9fXyAgLyAgICAgfF9fX198ICAgICAgICB7Tn0yMDIyCiAgICAgXC97SH0gIEdpdGh1Yi5jb20vVzRIWVVYRHtOfSAgICAgICAgICAgICAgICIiIgoJcHJpbnQoZiIgIHtsb299e059ICAgXG4gIikKCQojbG9nZ2luCmRlZiBsb2dpbigpOgoJb3Muc3lzdGVtKCJjbGVhciIpCglsb2dvKCkKCXRyeToKCQljb29raWUgPSBpbnB1dCgiID8gY29va2llIGZiIGNlcGV0IDogIikKCQlnZXRfdG9rID0gcmVxdWVzdHMuZ2V0KCdodHRwczovL2J1c2luZXNzLmZhY2Vib29rLmNvbS9idXNpbmVzc19sb2NhdGlvbnMnLGhlYWRlcnMgPSB7InVzZXItYWdlbnQiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgOC4xLjA7IE1JIDggQnVpbGQvT1BNMS4xNzEwMTkuMDExKSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvNjkuMC4zNDk3Ljg2IE1vYmlsZSBTYWZhcmkvNTM3LjM2IiwicmVmZXJlciI6ICJodHRwczovL3d3dy5mYWNlYm9vay5jb20vIiwiaG9zdCI6ICJidXNpbmVzcy5mYWNlYm9vay5jb20iLCJvcmlnaW4iOiAiaHR0cHM6Ly9idXNpbmVzcy5mYWNlYm9vay5jb20iLCJ1cGdyYWRlLWluc2VjdXJlLXJlcXVlc3RzIiA6ICIxIiwiYWNjZXB0LWxhbmd1YWdlIjogImlkLUlELGlkO3E9MC45LGVuLVVTO3E9MC44LGVuO3E9MC43IiwiY2FjaGUtY29udHJvbCI6ICJtYXgtYWdlPTAiLCJhY2NlcHQiOiJ0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS93ZWJwLGltYWdlL2FwbmcsKi8qO3E9MC44IiwiY29udGVudC10eXBlIjoidGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04In0sY29va2llcyA9IHsiY29va2llIjpjb29raWV9KQoJCXRva2VueiA9IHJlLnNlYXJjaCgiKEVBQUdcdyspIiwgZ2V0X3Rvay50ZXh0KS5ncm91cCgxKQoJCWNva2kgPSB7ImNvb2tpZSI6Y29va2llfQoJZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgoJCWV4aXQoImNva2kgbW9kYXIgZ29ibG9nIikKCWlkdCA9IGlucHV0KGYiID8gbWFzdWthbiBsaW5rIGNlcGV0IDoge0h9ICIpCglsaW1pdCA9IGludChpbnB1dChmIiB7Tn0/IHtOfW1hc3VrYW4gbGltaXQgc3UgOiB7SH0gIikpCglwcmludChmIlxuXHRcdHtIfWN0cmwreiB7Tn11bnR1ayBiZXJoZW50aSB5YSBhbmppbmdcbiIpCgl0b2tlbiA9IHRva2VueiAKCWNvb2tpZSA9IGNva2kKCXRyeToKCQlmb3IgeCBpbiByYW5nZShsaW1pdCk6CgkJCXgrPTEKCQkJcmVzcG9uc2UgPSBzZXMucG9zdChmImh0dHBzOi8vZ3JhcGguZmFjZWJvb2suY29tL3YxMy4wL21lL2ZlZWQ/bGluaz17aWR0fSZwdWJsaXNoZWQ9MCZhY2Nlc3NfdG9rZW49e3Rva2VufSIsaGVhZGVycz1oZWFkZXIsIGNvb2tpZXM9Y29va2llKS5qc29uKCkKCQkJaWYgImlkIiBpbiByZXNwb25zZToKCQkJCXN5cy5zdGRvdXQud3JpdGUoZiJcciBbe0h9KntOfV0gRE9ORSBTQVQge3h9IHwge3Jlc3BvbnNlfSIpO3N5cy5zdGRvdXQuZmx1c2goKQoJCQllbHNlOgoJCQkJcHJpbnQoZiIgZ2FnYWwsbXVuZ2tpbiBha3VuIGFuZGEgdGVya2VuYSBzcGFtIGF0YXUgbG8ga3VyYW5nIGdhbnRlbmciKTtleGl0KCkKCWV4Y2VwdCByZXF1ZXN0cy5leGNlcHRpb25zLkNvbm5lY3Rpb25FcnJvcjoKCQlleGl0KCJbIV0gbG8gZ2FrIGtvbmVrIGtlIGludGVybmV0IHRvbG9sISIpCgoKaWYgX19uYW1lX18gPT0gJ19fbWFpbl9fJzoKCWxvZ2luKCkK'))             # <<<<<<<<<<<<<<
@@ -1401,11 +1401,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initRun(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initRun(void)
+__Pyx_PyMODINIT_FUNC initrun(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initrun(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_Run(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_Run(void)
+__Pyx_PyMODINIT_FUNC PyInit_run(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_run(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -1472,7 +1472,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_Run(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_run(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -1486,7 +1486,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_Run(PyObject *__pyx_pyinit_module)
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'Run' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'run' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -1501,7 +1501,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_Run(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_run(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -1538,7 +1538,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("Run", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("run", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -1556,14 +1556,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_Run) {
+  if (__pyx_module_is_main_run) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "Run")) {
-      if (unlikely(PyDict_SetItemString(modules, "Run", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "run")) {
+      if (unlikely(PyDict_SetItemString(modules, "run", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -1584,7 +1584,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "Run.py":3
+  /* "run.py":3
  * #Encrypt By Wahyu (https://github.com/W4HYUXD)
  * 
  * import base64             # <<<<<<<<<<<<<<
@@ -1595,7 +1595,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_base64, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "Run.py":4
+  /* "run.py":4
  * 
  * import base64
  * exec(base64.b64decode('IyBBdXRob3IgQWdhayBMYWdpIEFnYWsgU3RyZXMgSmFkaSBUb3hpYwppbXBvcnQgbWFyc2hhbAppbXBvcnQgb3MscmUsc3lzLGJzNCx0aW1lLGpzb24scmFuZG9tLGRhdGV0aW1lLHJlcXVlc3RzLCBjYWxlbmRhciwgcmFuZG9tCgoKaGVhZGVyID0geyJhdXRob3JpdHkiOiJncmFwaC5mYWNlYm9vay5jb20iLCJjYWNoZS1jb250cm9sIjoibWF4LWFnZT0wIiwic2VjLWNoLXVhLW1vYmlsZSI6Ij8wIiwidXNlci1hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk4LjAuNDc1OC42NiBTYWZhcmkvNTM3LjM2In0Kc2VzPXJlcXVlc3RzLlNlc3Npb24oKQoKI3dhcm5hIGNvZWcKSyA9ICJceDFiWzA7MzNtIgpOID0gIlx4MWJbMG0iIApCID0gIlx4MWJbMDszNG0iCk0gPSAiXHgxYlswOzMxbSIKSCA9ICJceDFiWzA7MzJtIgoKZGVmIGxvZ28oKToKCWxvbz1mIiIiCl9fX19fX19fX19fX19fX19fX19fX18KXF8gICBfX19fXy9cX18gICAgX19fLwogfCAgICBfXykgICAgfCAgICB8ICAgCiB8ICAgICBcICAgICB8ICAgIHwgIHtCfUZBQ0VCT09LIFRPT0xTIHtOfQogXF9fXyAgLyAgICAgfF9fX198ICAgICAgICB7Tn0yMDIyCiAgICAgXC97SH0gIEdpdGh1Yi5jb20vVzRIWVVYRHtOfSAgICAgICAgICAgICAgICIiIgoJcHJpbnQoZiIgIHtsb299e059ICAgXG4gIikKCQojbG9nZ2luCmRlZiBsb2dpbigpOgoJb3Muc3lzdGVtKCJjbGVhciIpCglsb2dvKCkKCXRyeToKCQljb29raWUgPSBpbnB1dCgiID8gY29va2llIGZiIGNlcGV0IDogIikKCQlnZXRfdG9rID0gcmVxdWVzdHMuZ2V0KCdodHRwczovL2J1c2luZXNzLmZhY2Vib29rLmNvbS9idXNpbmVzc19sb2NhdGlvbnMnLGhlYWRlcnMgPSB7InVzZXItYWdlbnQiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgOC4xLjA7IE1JIDggQnVpbGQvT1BNMS4xNzEwMTkuMDExKSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvNjkuMC4zNDk3Ljg2IE1vYmlsZSBTYWZhcmkvNTM3LjM2IiwicmVmZXJlciI6ICJodHRwczovL3d3dy5mYWNlYm9vay5jb20vIiwiaG9zdCI6ICJidXNpbmVzcy5mYWNlYm9vay5jb20iLCJvcmlnaW4iOiAiaHR0cHM6Ly9idXNpbmVzcy5mYWNlYm9vay5jb20iLCJ1cGdyYWRlLWluc2VjdXJlLXJlcXVlc3RzIiA6ICIxIiwiYWNjZXB0LWxhbmd1YWdlIjogImlkLUlELGlkO3E9MC45LGVuLVVTO3E9MC44LGVuO3E9MC43IiwiY2FjaGUtY29udHJvbCI6ICJtYXgtYWdlPTAiLCJhY2NlcHQiOiJ0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS93ZWJwLGltYWdlL2FwbmcsKi8qO3E9MC44IiwiY29udGVudC10eXBlIjoidGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04In0sY29va2llcyA9IHsiY29va2llIjpjb29raWV9KQoJCXRva2VueiA9IHJlLnNlYXJjaCgiKEVBQUdcdyspIiwgZ2V0X3Rvay50ZXh0KS5ncm91cCgxKQoJCWNva2kgPSB7ImNvb2tpZSI6Y29va2llfQoJZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgoJCWV4aXQoImNva2kgbW9kYXIgZ29ibG9nIikKCWlkdCA9IGlucHV0KGYiID8gbWFzdWthbiBsaW5rIGNlcGV0IDoge0h9ICIpCglsaW1pdCA9IGludChpbnB1dChmIiB7Tn0/IHtOfW1hc3VrYW4gbGltaXQgc3UgOiB7SH0gIikpCglwcmludChmIlxuXHRcdHtIfWN0cmwreiB7Tn11bnR1ayBiZXJoZW50aSB5YSBhbmppbmdcbiIpCgl0b2tlbiA9IHRva2VueiAKCWNvb2tpZSA9IGNva2kKCXRyeToKCQlmb3IgeCBpbiByYW5nZShsaW1pdCk6CgkJCXgrPTEKCQkJcmVzcG9uc2UgPSBzZXMucG9zdChmImh0dHBzOi8vZ3JhcGguZmFjZWJvb2suY29tL3YxMy4wL21lL2ZlZWQ/bGluaz17aWR0fSZwdWJsaXNoZWQ9MCZhY2Nlc3NfdG9rZW49e3Rva2VufSIsaGVhZGVycz1oZWFkZXIsIGNvb2tpZXM9Y29va2llKS5qc29uKCkKCQkJaWYgImlkIiBpbiByZXNwb25zZToKCQkJCXN5cy5zdGRvdXQud3JpdGUoZiJcciBbe0h9KntOfV0gRE9ORSBTQVQge3h9IHwge3Jlc3BvbnNlfSIpO3N5cy5zdGRvdXQuZmx1c2goKQoJCQllbHNlOgoJCQkJcHJpbnQoZiIgZ2FnYWwsbXVuZ2tpbiBha3VuIGFuZGEgdGVya2VuYSBzcGFtIGF0YXUgbG8ga3VyYW5nIGdhbnRlbmciKTtleGl0KCkKCWV4Y2VwdCByZXF1ZXN0cy5leGNlcHRpb25zLkNvbm5lY3Rpb25FcnJvcjoKCQlleGl0KCJbIV0gbG8gZ2FrIGtvbmVrIGtlIGludGVybmV0IHRvbG9sISIpCgoKaWYgX19uYW1lX18gPT0gJ19fbWFpbl9fJzoKCWxvZ2luKCkK'))             # <<<<<<<<<<<<<<
@@ -1617,7 +1617,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "Run.py":1
+  /* "run.py":1
  * #Encrypt By Wahyu (https://github.com/W4HYUXD)             # <<<<<<<<<<<<<<
  * 
  * import base64
@@ -1636,11 +1636,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init Run", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init run", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init Run");
+    PyErr_SetString(PyExc_ImportError, "init run");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
