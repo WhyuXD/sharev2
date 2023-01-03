@@ -5,11 +5,12 @@ $ pkg update && pkg upgrade
 $ pkg install python
 $ pkg install git  
 $ pip insttall requests bs4
-$ git clone https://github.com/W4HYUXD/simplev2
+$ git clone https://github.com/W4HYUXD/simplev2.git
 $ cd simplev2
 ```
 ### Run
 ```
+$ git pull
 $ python Run.py
 ```
 ## MY SOCIAL MEDIA
