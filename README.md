@@ -11,7 +11,7 @@ $ cd share2
 ### Run
 ```
 $ git pull
-$ python Run.py
+$ python run.py
 ```
 ## MY SOCIAL MEDIA
 [![Github](https://img.shields.io/badge/Github-Follow-black?style=for-the-badge&logo=github)](https://github.com/W4HYUXD)
